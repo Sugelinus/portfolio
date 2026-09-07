@@ -303,6 +303,7 @@
     scroll-margin-top:64px;
   }
   footer.site{ scroll-margin-top:64px; }
+  .hero{ scroll-margin-top:64px; }
   .layer-head{
     display:grid; grid-template-columns:220px 1fr; gap:2rem; margin-bottom:2.4rem;
   }
@@ -475,6 +476,7 @@
   /* ============ RESPONSIVE ============ */
   @media (max-width: 880px){
     .hero-grid{ grid-template-columns:1fr; }
+    .hero-visual{ order:-1; margin-bottom:.5rem; }
     .layer-head{ grid-template-columns:1fr; gap:.5rem; }
     .skill-groups{ grid-template-columns:1fr; }
     .project-grid{ grid-template-columns:1fr; }
@@ -521,6 +523,7 @@
       <span>Linus&nbsp;Kirwa</span>
     </div>
     <nav class="links" id="navLinks" aria-label="Section navigation">
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#tools">Tools</a>
       <a href="#experience">Experience</a>
@@ -540,7 +543,7 @@
 <main id="main">
 
   <!-- ============ HERO ============ -->
-  <section class="hero">
+  <section class="hero" id="about">
     <div class="wrap hero-grid">
       <div>
         <p class="eyebrow" data-reveal="1"><span class="tier-dot"></span>Software Engineer · Full-Stack Developer · Data &amp; BI Engineer</p>
@@ -627,7 +630,6 @@
     <div class="wrap">
       <div class="layer-head">
         <div>
-          <p class="eyebrow"><span class="tier-dot"></span>Selected Work</p>
           <div class="layer-num">Projects</div>
         </div>
         <div>
@@ -810,9 +812,6 @@
         <div>
           <p class="eyebrow"><span class="tier-dot"></span>Experience</p>
           <div class="layer-num">Track Record</div>
-        </div>
-        <div>
-          <p class="profile-sub">Three placements, one thread</p>
         </div>
       </div>
 
